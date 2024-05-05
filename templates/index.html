@@ -1,12 +1,32 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PyWebView with Flask</title>
+    <title>Schedule</title>
+    <style>
+      .available {
+        background-color: white;
+      }
+      .unavailable {
+        background-color: lightcoral;
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello, PyWebView!</h1>
+    <h1>Schedule</h1>
+    <table border="1">
+      <!-- Iterate over each row in schedule -->
+      {% for row in schedule %}
+      <tr>
+        <!-- Iterate over each column in the row -->
+        {% for item in row %}
+        <!-- Apply different styles based on availability -->
+        {% if item == 'X' %}
+        <td class="unavailable">{{ item }}</td>
+        {% else %}
+        <td class="available">{{ item }}</td>
+        {% endif %} {% endfor %}
+      </tr>
+      {% endfor %}
+    </table>
   </body>
 </html>
