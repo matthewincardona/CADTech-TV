@@ -24,3 +24,9 @@ To run the project, you need to have both Flask and pywebview running:
 
 `flask --app flask_app run`
 `python3 pywebviewer.py`
+
+
+# Members
+* Garrett Templar
+* Matthew Incardona
+* May Jiang
