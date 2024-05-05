@@ -1,4 +1,5 @@
 # CADTech-TV
+A Flask app for displaying lab availability on the front desk CADTech TV.
 
 ## Prepare your dev environment
 
