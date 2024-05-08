@@ -23,7 +23,9 @@ Before pushing to GitHub, make sure to save packages to requirements.txt:
 
 To run the project, you need to have both Flask and pywebview running:
 
-`flask --app flask_app run`
+This runs Flask with hot reloading
+`flask --app flask_app run --debug --extra-files templates/index.html:static/css/main.css`
+
 `python3 pywebviewer.py`
 
 

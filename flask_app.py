@@ -9,7 +9,7 @@ with open('schedule/Monday.csv', newline='') as csvfile:
     for row in reader:
         schedule_data.append(row)
     
-    print(schedule_data)
+    # print(schedule_data)
 
 app = Flask(__name__)
 

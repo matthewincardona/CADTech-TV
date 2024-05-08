@@ -1,0 +1,9 @@
+.available {
+    background-color: white;
+  }
+  .unavailable {
+    background-color: lightcoral;
+  }
+  td {
+    text-align: center;
+  }
