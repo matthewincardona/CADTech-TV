@@ -1,8 +1,9 @@
 .available {
-    background-color: white;
+    background-color: #dddddd;
   }
   .unavailable {
-    background-color: lightcoral;
+    background-color: #e1e1e1;
+    color: #00000000
   }
   td {
     text-align: center;

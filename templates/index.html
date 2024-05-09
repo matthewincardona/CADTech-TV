@@ -7,14 +7,14 @@
   </head>
   <body>
     <h1>Schedule</h1>
-    <table cellspacing="0" cellpadding="0">
+    <table cellspacing="20px" cellpadding="0">
       {% for row in schedule %}
       <tr>
         {% for item in row %}
         {% if item == 'X' %}
-        <td style="width: 20px;height: 40px" class="unavailable">{{ item }}</td>
+        <td style="width: 100px;height: 60px" class="unavailable">{{ item }}</td>
         {% else %}
-        <td style="width: 20px;height: 40px" class="available">{{ item }}</td>
+        <td style="width: 100px;height: 60px" class="available">{{ item }}</td>
         {% endif %} {% endfor %}
       </tr>
       {% endfor %}
